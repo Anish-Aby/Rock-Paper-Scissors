@@ -40,6 +40,7 @@ function generateComputerChoice(){
 function checkResult(userChoice, generatedNumber) {
     if(userChoice === "Rock 💎" && generatedNumber === 2){
         resultDisplay.innerHTML = "You won!";
+        won();
     }
     else if(userChoice === "Rock 💎" && generatedNumber === 0){
         resultDisplay.innerHTML = "Draw!";
@@ -50,13 +51,16 @@ function checkResult(userChoice, generatedNumber) {
     }
     else if(userChoice === "Paper 📜" && generatedNumber == 0){
         resultDisplay.innerHTML = "You won!";
+        won();
     }
 
     else if(userChoice === "Scissors ✂" && generatedNumber == 1){
         resultDisplay.innerHTML = "You won!";
+        won();
     }
     else if(userChoice === "Scissors ✂" && generatedNumber == 2){
         resultDisplay.innerHTML = "Draw!";
+
     }
     else{
         resultDisplay.innerHTML = "The computer wins!";
