@@ -58,8 +58,8 @@ body{
     position: absolute;
     margin: 20px;
     border-radius: 15px;
-    background-color: rgba(255,255,255,0.06);
     border: 1px solid rgba(255, 255, 255, 0.068);
+    background-color: rgba(75, 75, 75, 0.041);
     border-radius: 50px;
     backdrop-filter: blur(10px);
     box-shadow: 10px 10px 10px rgba(8, 8, 8, 0.096);
@@ -84,6 +84,35 @@ body{
     width: 150%;
     height: 100%;
     object-fit:fill;
+}
+
+.info-content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 100px;
+    margin-left: 105px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.socials{
+    position: absolute;
+    font-size: 30px;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 30px;
+    margin-left: 90px;
+}
+
+.github{
+    color: black;
+    margin: 0 10px;
+}
+
+.instagram{
+    color: black;
+    margin: 0 10px;
 }
 
 h1{
@@ -162,10 +191,6 @@ button:active{
 
 a{
     text-decoration: none;
-}
-
-footer:hover{
-    animation: animate 1s ease forwards;
 }
 
 @keyframes animate{
