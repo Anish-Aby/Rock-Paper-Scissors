@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url(fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+body{
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, 
+    rgba(59,173,227,1) 0%, 
+    rgba(87,111,230,1) 25%, 
+    rgba(152,68,183,1) 51%, 
+    rgba(255,53,127,1) 100%);
+    animation: AnimateBG 10s ease infinite;
+    position: relative;
+}
+
+@keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+.parent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradient{
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    height: 100vh;
+}
+
+.mid-box{
+    height: 60vh;
+    width: 90vh;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.068);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-family: "Pacifico";
+    box-shadow: 10px 10px 10px rgba(8, 8, 8, 0.096);
+    
+}
+
+.info-box{
+    height: 35vh;
+    width: 30vh;
+    background-color: white;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255, 255, 255, 0.068);
+    border-radius: 50px;
+    backdrop-filter: blur(10px);
+    box-shadow: 10px 10px 10px rgba(8, 8, 8, 0.096);
+    transition: .5s ease;
+    
+}
+
+.img-box{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    overflow: hidden;
+    margin: 40px 23%;
+    border: 5px solid black;
+}
+
+.img-box img{
+    left: 0;
+    top: 0;
+    width: 150%;
+    height: 100%;
+    object-fit:fill;
+}
+
+h1{
+    color: black;
+    font-size: 80px;
+    margin: 40px;
+}
+
+h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+button{
+    margin: 0 40px;
+    border: none;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 20px;
+    margin-bottom: 40px;
+}
+
+p{
+    margin-bottom: 40px;
+}
+
+button:hover{
+    animation: bloom 0.5s ease forwards;
+    box-shadow: 5px 5px 30px rgba(54, 54, 54, 0.356);
+    
+}
+
+@keyframes bloom {
+    0%  {
+         transform: scale(1);
+         background-color: #ff4e66;
+         color: aliceblue;
+        }
+
+    30% {
+        background-color: #f093fb;
+        color: aliceblue;
+        border: rgba(0, 0, 0, 0.473);
+        }
+
+    100% {
+         transform: scale(1.5);
+         background-color: inherit;
+         color: aliceblue;
+         border: rgba(0, 0, 0, 0);
+        }
+}
+
+button:active{
+    animation: shrink 0.5s ease forwards;
+}
+
+@keyframes shrink {
+    0% {
+        transform: scale(1.5);
+        background-color: inherit;
+        color: white;
+        }
+    100% {
+          color: white;
+          transform: scale(1);
+          background-color: inherit;
+         }
+}
+
+.exclaim{
+   display: inline-block;
+   opacity: 0%;
+}
+
+a{
+    text-decoration: none;
+}
+
+footer:hover{
+    animation: animate 1s ease forwards;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }
+}
+
+
+
